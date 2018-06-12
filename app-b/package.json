@@ -1,0 +1,23 @@
+{
+  "name": "grpc-test for app-b",
+  "version": "1.0.0",
+  "description": "Test proto support of 'Any' type between two applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grpc",
+    "node",
+    "protobuf"
+  ],
+  "dependencies": {
+    "async": "^2.6.1",
+    "google-protobuf": "^3.5.0",
+    "grpc": "^1.12.3",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0"
+  },
+  "author": "Adan Huerta",
+  "license": "ISC"
+}
