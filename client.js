@@ -23,7 +23,11 @@ function main() {
     console.log('Greeting:', response.message);
   });
 
-  client.logTheObj({thisCanBeAnything: {type_url: 'abc123'}}, function(err, response) {
+  client.logTheObj({thisCanBeAnything: 
+      {
+          type_url: 'abc123'
+      }
+  }, function(err, response) {
     console.log('Logging the obj.. :', response);
   });
 }
