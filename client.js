@@ -1,8 +1,7 @@
-// SERVER SIDE
+// CLIENT SIDE
+// import "google/protobuf/src/google/protobuf/any.proto";
 
-import "google/protobuf/any.proto";
-
-var PROTO_PATH = __dirname + '/../protos/test.proto'; 
+var PROTO_PATH = __dirname + '\\protos\\test.proto';
 
 var grpc = require('grpc');
 var hello_proto = grpc.load(PROTO_PATH).helloworld;
@@ -24,8 +23,8 @@ function main() {
     console.log('Greeting:', response.message);
   });
 
-  client.logTheObj({name: 'you'}, function(err, response) {
-    console.log('Logging the obj.. :', response.message);
+  client.logTheObj({thisCanBeAnything: {type_url: 'abc123'}}, function(err, response) {
+    console.log('Logging the obj.. :', response);
   });
 }
 
