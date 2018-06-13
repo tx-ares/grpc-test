@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-/* option java_multiple_files = true;
+option java_multiple_files = true;
 option java_package = "io.grpc.examples.helloworld";
 option java_outer_classname = "HelloWorldProto";
-option objc_class_prefix = "HLW"; */
+option objc_class_prefix = "HLW";
 
-import "google/protobuf/any.proto";
+import "google/protobuf/src/google/protobuf/any.proto";
 
 package helloworld;
 // The greeting service definition.
