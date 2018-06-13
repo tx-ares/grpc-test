@@ -30,6 +30,6 @@ message HelloReply {
   string message = 1;
 }
 
-message TestObj = {
+message TestObj {
     repeated google.protobuf.Any = 1;
 }

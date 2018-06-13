@@ -1,6 +1,10 @@
 // CLIENT SIDE
+console.log( __dirname, " << __dirname")
+var PROTO_PATH = __dirname + '\\protos\\test.proto';
 
-var PROTO_PATH = __dirname + '../protos/test.proto';
+// PROTO_PATH = PROTO_PATH.replace(/\//g, "\\");
+
+console.log(PROTO_PATH , " << path")
 
 var grpc = require('grpc');
 var hello_proto = grpc.load(PROTO_PATH).helloworld; // grpc.load(PROTO_PATH).packagename <- as defined in test.proto
